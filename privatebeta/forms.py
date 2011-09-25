@@ -1,5 +1,5 @@
 from django import forms
-from privatebeta.models import InviteRequest
+from models import InviteRequest
 
 class InviteRequestForm(forms.ModelForm):
     class Meta:

@@ -3,9 +3,9 @@ from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from privatebeta.forms import InviteRequestForm
+from forms import InviteRequestForm
 
-def invite(request, form_class=InviteRequestForm, template_name="privatebeta/invite.html", extra_context=None):
+def invite(request, form_class=InviteRequestForm, template_name="invite.html", extra_context=None):
     """
     Allow a user to request an invite at a later date by entering their email address.
     
@@ -44,7 +44,7 @@ def invite(request, form_class=InviteRequestForm, template_name="privatebeta/inv
     return render_to_response(template_name, context,
         context_instance=RequestContext(request))
 
-def sent(request, template_name="privatebeta/sent.html", extra_context=None):
+def sent(request, template_name="sent.html", extra_context=None):
     """
     Display a message to the user after the invite request is completed
     successfully.
