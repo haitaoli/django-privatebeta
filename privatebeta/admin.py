@@ -1,5 +1,5 @@
 from django.contrib import admin
-from privatebeta.models import InviteRequest
+from models import InviteRequest
 
 class InviteRequestAdmin(admin.ModelAdmin):
     date_hierarchy = 'created'
