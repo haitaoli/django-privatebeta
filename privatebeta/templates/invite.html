@@ -1,0 +1,27 @@
+<html>
+<head>
+	<style>
+		#id_email {
+			width: 200px;
+			margin-left: 8px;
+			color: #000;
+			height: 20px;
+			font-size: 16px;
+		}
+		* {
+			margin: 0; 
+			padding: 0; 
+			font-family: "Century Gothic" ;
+			color: #ddd;
+		}
+	</style>
+</head>
+<body>
+    Sign up to receive an invitation when we launch.
+	<form action="{% url privatebeta_invite %}" method="post">
+	{{ form }}
+	{% csrf_token %}
+	<input type="submit" value="Submit" style='color: #555; font-size: 17px;'/>
+</form>
+</body>
+</html>
