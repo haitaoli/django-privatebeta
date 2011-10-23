@@ -1,7 +1,7 @@
 
 from south.db import db
 from django.db import models
-from privatebeta.models import *
+from django_privatebeta.privatebeta.models import *
 
 class Migration:
     
